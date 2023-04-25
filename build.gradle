@@ -4,14 +4,13 @@ plugins {
     id 'java-library'
     id 'maven-publish'
     id 'signing'
-    id 'org.sonatype.gradle.plugins.scan' version '2.5.5'
 }
 
 group = 'com.computinglaboratory'
 version = '1.0'
 
-sourceCompatibility = '11'
-targetCompatibility = '11'
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
 
 repositories {
     mavenCentral()
@@ -65,8 +64,8 @@ publishing {
             from components.java
             pom {
                 name = 'AlphanumericComparator'
-                description = 'Alphanumeric comparatory for Java'
-                url = 'https://github.com/computinglaboratory/alphanumeric-comparator'
+                description = 'Alphanumeric comparator for Java'
+                url = 'https://github.com/kamilszewc/alphanumeric-comparator'
                 licenses {
                     license {
                         name = 'The Apache License, Version 2.0'
@@ -81,9 +80,9 @@ publishing {
                     }
                 }
                 scm {
-                    connection = 'scm:git:git://github.com/computinglaboratory/alphanumeric-comparator.git'
-                    developerConnection = 'scm:git:https://github.com/computinglaboratory/alphanumeric-comparator.git'
-                    url = 'https://github.com/computinglaboratory/alphanumeric-comparator.git'
+                    connection = 'scm:git:git://github.com/kamilszewc/alphanumeric-comparator.git'
+                    developerConnection = 'scm:git:https://github.com/kamilszewc/alphanumeric-comparator.git'
+                    url = 'https://github.com/kamilszewc/alphanumeric-comparator.git'
                 }
             }
         }
@@ -93,10 +92,4 @@ publishing {
 signing {
     sign publishing.publications.mavenJava
     sign configurations.archives
-}
-
-ossIndexAudit {
-    allConfigurations = false
-    useCache = false
-    outputFormat = 'DEFAULT'
 }
