@@ -60,10 +60,10 @@ publishing {
     publications {
 
         mavenJava(MavenPublication) {
-            artifactId = 'alphanumericcomparator'
+            artifactId = 'alphanumeric-comparator'
             from components.java
             pom {
-                name = 'AlphanumericComparator'
+                name = 'Alphanumeric Comparator'
                 description = 'Alphanumeric comparator for Java'
                 url = 'https://github.com/kamilszewc/alphanumeric-comparator'
                 licenses {
