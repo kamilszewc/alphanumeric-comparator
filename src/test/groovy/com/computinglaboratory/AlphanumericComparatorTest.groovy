@@ -46,6 +46,6 @@ class AlphanumericComparatorTest extends Specification {
         when:
             list.sort(new AlphanumericComparator())
         then:
-            thrown NullPointerException;
+            thrown NullPointerException
     }
 }
