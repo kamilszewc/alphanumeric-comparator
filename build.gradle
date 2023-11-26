@@ -6,11 +6,13 @@ plugins {
     id 'signing'
 }
 
-group = 'com.computinglaboratory'
-version = '1.0'
+group = 'io.github.kamilszewc'
+version = '1.1'
 
-sourceCompatibility = '1.8'
-targetCompatibility = '1.8'
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
 
 repositories {
     mavenCentral()
@@ -19,9 +21,9 @@ repositories {
 dependencies {
 
     // Testing
-    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation platform('org.junit:junit-bom:5.9.2')
     testImplementation 'org.junit.jupiter:junit-jupiter'
-    testImplementation 'org.apache.groovy:groovy-all:4.0.11'
+    testImplementation 'org.apache.groovy:groovy-all:4.0.15'
     testImplementation 'org.spockframework:spock-core:2.4-M1-groovy-4.0'
 }
 
@@ -66,6 +68,14 @@ publishing {
                 name = 'Alphanumeric Comparator'
                 description = 'Alphanumeric comparator for Java'
                 url = 'https://github.com/kamilszewc/alphanumeric-comparator'
+//                distributionManagement {
+//                    relocation {
+//                        groupId = 'io.github.kamilszewc'
+//                        artifactId = 'alphanumeric-comparator'
+//                        version = '1.1'
+//                        message = 'Project moved to io.github.kamilszewc:alphanumeric-comparator'
+//                    }
+//                }
                 licenses {
                     license {
                         name = 'The Apache License, Version 2.0'

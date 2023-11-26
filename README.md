@@ -38,14 +38,14 @@ Using maven:
 
 ```xml
 <dependency>
-    <groupId>com.computinglaboratory</groupId>
+    <groupId>io.github.kamilszewc</groupId>
     <artifactId>alphanumeric-comparator</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
 </dependency>
 ```
 
 Using gradle:
 
 ```groovy
-implementation 'com.computinglaboratory:alphanumeric-comparator:1.0'
+implementation 'io.github.kamilszewc:alphanumeric-comparator:1.1'
 ```
