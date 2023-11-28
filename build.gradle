@@ -7,7 +7,7 @@ plugins {
 }
 
 group = 'io.github.kamilszewc'
-version = '1.1'
+version = '1.2'
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
@@ -68,14 +68,6 @@ publishing {
                 name = 'Alphanumeric Comparator'
                 description = 'Alphanumeric comparator for Java'
                 url = 'https://github.com/kamilszewc/alphanumeric-comparator'
-//                distributionManagement {
-//                    relocation {
-//                        groupId = 'io.github.kamilszewc'
-//                        artifactId = 'alphanumeric-comparator'
-//                        version = '1.1'
-//                        message = 'Project moved to io.github.kamilszewc:alphanumeric-comparator'
-//                    }
-//                }
                 licenses {
                     license {
                         name = 'The Apache License, Version 2.0'

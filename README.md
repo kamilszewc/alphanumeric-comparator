@@ -40,12 +40,12 @@ Using maven:
 <dependency>
     <groupId>io.github.kamilszewc</groupId>
     <artifactId>alphanumeric-comparator</artifactId>
-    <version>1.1</version>
+    <version>1.2</version>
 </dependency>
 ```
 
 Using gradle:
 
 ```groovy
-implementation 'io.github.kamilszewc:alphanumeric-comparator:1.1'
+implementation 'io.github.kamilszewc:alphanumeric-comparator:1.2'
 ```
